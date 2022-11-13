@@ -26,6 +26,23 @@
             /* transform: scale(1.4) translate(135px,4px); */
             border-radius: 50%;
         }
+        p {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
     </style>
 </head>
 <body>
@@ -33,10 +50,12 @@
         <h1>Filtros</h1>
     </header>
     <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos ab esse vel praesentium accusamus ut eligendi labore reprehenderit, voluptate suscipit fugit commodi error, est porro sit dolor non nostrum laborum accusantium expedita deleniti laudantium? Aliquid iusto inventore est adipisci veniam quibusdam. Tempora accusamus fugiat expedita quia accusantium, nam impedit.</p>
         <section>
         <img src="img/gtasa.jpg" class="Filtros" alt="img">
         <img src="img/girasoles.jpg" class="Filtros" alt="img">
         </section>
+        
     </main>
 </body>
 </html>
