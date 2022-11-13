@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <style>
+        section{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 25px;
+        }
+        .Filtros{
+            filter: grayscale(3%) brightness(98%);
+            /* filter: grayscale(3%) brightness(98%) contrast(900%); */
+            /* filter: grayscale(3%) brightness(98%) hue-rotate(291deg) contrast(1000%) drop-shadow(-8px 10px 5px #449f37); */
+            filter: grayscale(3%) brightness(98%) hue-rotate(291deg) contrast(1000%) drop-shadow(-8px 10px 5px #449f37);
+
+        }
+        .Filtros:hover{
+            transform: rotate(290deg);
+            transform: scale(1.1) ;
+            transform: scale(1.4) skew(26deg) translate(135px,200px);
+            /* transform: scale(1.4) skew(26deg) translate(135px,4px); */
+            /* transform: scale(1.4) translate(135px,4px); */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filtros</h1>
+    </header>
+    <main>
+        <section>
+        <img src="img/gtasa.jpg" class="Filtros" alt="img">
+        <img src="img/girasoles.jpg" class="Filtros" alt="img">
+        </section>
+    </main>
+</body>
+</html>
